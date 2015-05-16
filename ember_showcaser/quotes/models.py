@@ -6,5 +6,5 @@ class Quote(models.Model):
     poster = models.ForeignKey('auth.user')
     posted_date = models.DateTimeField(auto_now_add=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.quote
